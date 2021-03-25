@@ -1,0 +1,8 @@
+第一步：git init  初始化让Git管理当前文件夹
+第二步：git status 当前文件的状态，检测当前文件夹里面的文件状态
+
+git add 文件名：就是我要管这个文件了。这个文件变绿了。git add . 点表示所有的文件都被git管理起来了 
+git commit -m 'V1'   生成一个版本V1 然后git status  就会发现什么都没了
+
+
+第三步： git log 版本查看
