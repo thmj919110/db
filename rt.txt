@@ -5,4 +5,30 @@ git add 文件名：就是我要管这个文件了。这个文件变绿了。git add . 点表示所有的文件
 git commit -m 'V1'   生成一个版本V1 然后git status  就会发现什么都没了
 
 
-第三步： git log 版本查看
+第三步生成版本： git log 版本查看
+
+报错处理：没有邮箱和名字，解决一次就可
+第四步：回滚git reset --hard 版本号
+
+第五步：git reflog 显示所有的版本号
+第6步：git reset --hard 版本号 增加回滚以后的版本
+
+其他的密令：
+	回滚刚刚修改文件的代码：git checkout -- 版本号
+	暂存区的文件回滚 ：git reset HEAD 版本号
+
+---------------------------------------分支-----------------------------------------
+
+1，第一：主干 master 
+
+-------git branch dev 创建新的分支 在master的基础上
+ 
+--------git checkout dev 跳转到dev分支上
+
+----------git checkout 随意切换分支
+
+
+-------------- git merge bug  合并修复完的bug代码
+
+----git branch -d bug 删除bug文件
+
